@@ -2,7 +2,7 @@ import { storage, Context } from "near-sdk-as"
 
 // return the string 'hello world'
 export function helloWorld(names: Array<string>): string {
-  return names.map<string>(name=>'hello '+name).join('\n ')
+  return names.map<string>(name=>'hello '+name).join(`\n`)
 }
 
 // read the given key from account (contract) storage
